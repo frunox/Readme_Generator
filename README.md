@@ -1,29 +1,29 @@
-# _A Nearly Finished App_
+# _readMe.md Generator_
 
 ## Project Description
 
-An app creating a command-line method of creating a readMe.md file.
+This is a command-line app to automate creation of a readMe.md file for your github repository
 
 ## Table of Contents
 This should be a list.
 
 ## Installation
-You probably shouldn't install this.
+Just clone and go.
 
 ## Usage
-It's usable, but not complete.
+Enter node index.js at the command line
 
 ## Licensing
 MIT
 
 ## Contributing
-Lots.  Thanks to my project team: Jason Koening, Lukas Hirsch and Chris Wells.
+Many, including my project team members:  Lukas Hirsch, Chris Wells, and Jason Koening.
 
 ## Tests
-Not sure what this means.
+Not sure what to put here.
 
 ## Questions
-This should also be a list.
+Lots.  This should be a list.
 
 ![](https://img.shields.io/badge/Project-Creator-brightgreen) frunox  null
 ![](https://avatars0.githubusercontent.com/u/60527588?v=4)![](http://bestanimations.com/Animals/Birds/bird-animated-gif-26.gif)

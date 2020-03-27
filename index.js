@@ -1,3 +1,5 @@
+
+
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
@@ -63,7 +65,7 @@ const questions = [
 
 inquirer.prompt(questions).then(async function ({ username, projectName, descriptionText, tocText, installText, usageText, licenseText, contributorText, testText, questionText }) {
   // create variable holding the URL for the API containing the ${ username }
-  const queryURL = `https://api.github.com/users/${username}`;
+  const queryURL = `https://api.github.com/users/${username}?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`;;
 
   await axios
     .get(queryURL) //use queryURL defined above

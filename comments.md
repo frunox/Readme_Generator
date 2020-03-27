@@ -20,6 +20,6 @@ The README will be populated with the following:
   * User GitHub email
 
 ## Notes
-This submission misses the requirements by not including the user's email address (it can be added).  Also, a link to an animated gif is included, but github noted that it was disabled.
+This submission misses the requirements by not including the user's email address. I set the .env file, used what should be the correct url in the axios call, but the email still returned as null.
 
 Some parts of the readMe.md were not formatted correctly, in that the Table of Contents, and some other categories, should include lists instead of plain text.
