@@ -131,8 +131,11 @@ inquirer.prompt(questions).then(async function ({ username, projectName, descrip
     .then(async function () {
       await appendFileAsync('README.md', `![](${avatar})`)
     })
+    .then(async function () {
+      await appendFileAsync('README.md', `![](http://bestanimations.com/Animals/Birds/bird-animated-gif-26.gif)`)
+    })
+
     .catch(function (err) {
       console.log(err);
     });
 });
-

@@ -1,29 +1,29 @@
-# _What a Project_
+# _A Nearly Finished App_
 
 ## Project Description
 
-IT needs this
+An app creating a command-line method of creating a readMe.md file.
 
 ## Table of Contents
-
+This should be a list.
 
 ## Installation
-DOn't
+You probably shouldn't install this.
 
 ## Usage
-It's used code
+It's usable, but not complete.
 
 ## Licensing
 MIT
 
 ## Contributing
-Many
+Lots.  Thanks to my project team: Jason Koening, Lukas Hirsch and Chris Wells.
 
 ## Tests
-Testing, testing
+Not sure what this means.
 
 ## Questions
-Lots
+This should also be a list.
 
 ![](https://img.shields.io/badge/Project-Creator-brightgreen) frunox  null
-![](https://avatars0.githubusercontent.com/u/60527588?v=4)
+![](https://avatars0.githubusercontent.com/u/60527588?v=4)![](http://bestanimations.com/Animals/Birds/bird-animated-gif-26.gif)
