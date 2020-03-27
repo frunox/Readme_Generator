@@ -44,6 +44,7 @@ inquirer.prompt(questions).then(async function ({ username, projectName }) {
   await appendFileAsync("README.md", "# " + projectName + `\n` + "\n")
     .then(function () {
       console.log("append Project Name");
+      return
     })
   // .catch(function (err) {
   //   console.log(err);
@@ -51,35 +52,36 @@ inquirer.prompt(questions).then(async function ({ username, projectName }) {
   await appendFileAsync("README.md", "## Project Description" + `\n` + `\n`)
     .then(async function () {
       console.log("append project description header");
-      enterText();
-      // inquirer
-      //   .prompt([
-      //     {
-      //       type: "confirm",
-      //       message: "Do you want to enter a project description now?",
-      //       name: "choice"
-      //     }
-      //   ])
-      //   .then(async function ({ choice }) {
-      //     console.log(`${choice}`)
-      //     if (choice) {
-      //       console.log(`Choice is true`)
-      //       inquirer
-      //         .prompt([
-      //           {
-      //             type: "input",
-      //             message: "Enter the project description",
-      //             name: "projectDesc"
-      //           }
-      //         ])
-      //         .then(async function ({ projectDesc }) {
-      //           console.log("enter description:  " + projectDesc)
-      //           await appendFileAsync("README.md", projectDesc + `\n`);
-      //         })
-      //   } else {
-      //     console.log("No description text added");
-      //   }
-      // });
+      // enterText();
+      inquirer
+        .prompt([
+          {
+            type: "confirm",
+            message: "Do you want to enter a project description now?",
+            name: "choice"
+          }
+        ])
+        .then(async function ({ choice }) {
+          console.log(`${choice}`)
+          if (choice) {
+            console.log(`Choice is true`)
+            inquirer
+              .prompt([
+                {
+                  type: "input",
+                  message: "Enter the project description",
+                  name: "projectDesc"
+                }
+              ])
+              .then(async function ({ projectDesc }) {
+                console.log("enter description:  " + projectDesc)
+                await appendFileAsync("README.md", projectDesc + `\n`);
+              })
+          } else {
+            console.log("No description text added");
+          }
+        });
+      return
     })
   await appendFileAsync("README.md", "## Table of Contents" + `\n` + `\n`)
     .then(function () {
